@@ -5,13 +5,13 @@ import './App.css';
 import TodoItem from './TodoItem';
 
 const App : FC = () => {
-  const [task, setTask] = useState<string>('')
-  const [workDay, setWorkDay] = useState<number>(0)
-  const [todoList, setTodoList] = useState<todoType[]>([])
+  const [task, setTask] = useState<string>('');
+  const [workDay, setWorkDay] = useState<number>(0);
+  const [todoList, setTodoList] = useState<todoType[]>([]);
 
   console.log(todoList);
 
-  //inputlar her değiştiğinde
+  //inputlar her değiştiğinde bu çalışsın
   const handleChange = (event : ChangeEvent<HTMLInputElement>) => {
     if(event.target.name === 'task'){
       setTask(event.target.value);
@@ -21,7 +21,7 @@ const App : FC = () => {
     }
   };
 
-  //butona basınca
+  //Yeni Task Ekle butonuna basınca çalışsın
   const addNewTask = () => {
     const newTask = {
       taskName:task,
@@ -43,9 +43,10 @@ const App : FC = () => {
     <div className="App">
       <div className='mainCard'>
         <input type="text" value={task} name='task' placeholder='Taskınızı giriniz' onChange={handleChange} />
-        <input type="number" value={workDay} name='workDay' placeholder='Kaç günde tamamladınız?' onChange={handleChange} />
+        <input type="number" value={workDay} name='workDay' placeholder='Kaç günde tamamlamalısınız?' onChange={handleChange} />
         <button onClick={addNewTask}>Yeni Task Ekle</button>
       </div>
+      {/* task:her bir eleman */}
       <div className='todocard'>
         {todoList.map((task:todoType,index:number)=>{
           return <TodoItem key={index} task={task} deleteTask={deleteTask}/>
