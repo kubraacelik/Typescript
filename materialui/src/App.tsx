@@ -10,6 +10,11 @@ import { LessonRadioExample } from './components/LessonRadioExample';
 import { LessonSelect } from './components/LessonSelect';
 import { LessonCheckBox } from './components/LessonCheckBox';
 import { LessonAutoComplete } from './components/LessonAutoComplete';
+import { LessonBox } from './components/LessonBox';
+import { LessonStack } from './components/LessonStack';
+import { LessonGrid } from './components/LessonGrid';
+import { LessonCard } from './components/LessonCard';
+import { LessonAccordion } from './components/LessonAccordion';
 
 function App() {
   return (
@@ -22,7 +27,12 @@ function App() {
       {/* <LessonRadioExample /> */}
       {/* <LessonSelect /> */}
       {/* <LessonCheckBox /> */}
-      <LessonAutoComplete />
+      {/* <LessonAutoComplete /> */}
+      {/* <LessonBox /> */}
+      {/* <LessonStack /> */}
+      {/* <LessonGrid /> */}
+      {/* <LessonCard /> */}
+      <LessonAccordion />
     </div>
   );
 }
