@@ -8,6 +8,8 @@ import LessonTextField from './components/LessonTextField';
 import LessonRadioGroup from './components/LessonRadioGroup';
 import { LessonRadioExample } from './components/LessonRadioExample';
 import { LessonSelect } from './components/LessonSelect';
+import { LessonCheckBox } from './components/LessonCheckBox';
+import { LessonAutoComplete } from './components/LessonAutoComplete';
 
 function App() {
   return (
@@ -18,7 +20,9 @@ function App() {
       {/* <LessonTextField/> */}
       {/* <LessonRadioGroup/> */}
       {/* <LessonRadioExample /> */}
-      <LessonSelect />
+      {/* <LessonSelect /> */}
+      {/* <LessonCheckBox /> */}
+      <LessonAutoComplete />
     </div>
   );
 }
