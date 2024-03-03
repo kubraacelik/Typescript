@@ -21,6 +21,12 @@ import { LessonPaper } from './components/LessonPaper';
 import { LessonLink } from './components/LessonLink';
 import { LessonBreadCrumb } from './components/LessonBreadCrumb';
 import { LessonDrawer } from './components/LessonDrawer';
+import { LessonBadge } from './components/LessonBadge';
+import { LessonSpeedDial } from './components/LessonSpeedDial';
+import { LessonBottomNavigation } from './components/LessonBottomNavigation';
+import { LessonAvatar } from './components/LessonAvatar';
+import { LessonList } from './components/LessonList';
+import { LessonToolTip } from './components/LessonToolTip';
 
 function App() {
   return (
@@ -44,7 +50,13 @@ function App() {
       {/* <LessonPaper /> */}
       {/* <LessonLink /> */}
       {/* <LessonBreadCrumb /> */}
-      <LessonDrawer />
+      {/* <LessonDrawer /> */}
+      {/* <LessonBadge /> */}
+      {/* <LessonSpeedDial /> */}
+      {/* <LessonBottomNavigation /> */}
+      {/* <LessonAvatar /> */}
+      {/* <LessonList /> */}
+      {/* <LessonToolTip /> */}
     </div>
   );
 }
