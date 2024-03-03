@@ -27,6 +27,9 @@ import { LessonBottomNavigation } from './components/LessonBottomNavigation';
 import { LessonAvatar } from './components/LessonAvatar';
 import { LessonList } from './components/LessonList';
 import { LessonToolTip } from './components/LessonToolTip';
+import { LessonAlert } from './components/LessonAlert';
+import { LessonDialog } from './components/LessonDialog';
+import { LessonSnackBar } from './components/LessonSnackBar';
 
 function App() {
   return (
@@ -57,6 +60,9 @@ function App() {
       {/* <LessonAvatar /> */}
       {/* <LessonList /> */}
       {/* <LessonToolTip /> */}
+      {/* <LessonAlert /> */}
+      {/* <LessonDialog /> */}
+      <LessonSnackBar />
     </div>
   );
 }
