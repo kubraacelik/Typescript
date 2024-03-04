@@ -72,7 +72,7 @@ function App() {
       {/* <LessonSkeleton /> */}
       {/* <LessonLoadingButton /> */}
       {/* <LessonTable /> */}
-      {/* <LessonDateTime /> */}
+      <LessonDateTime />
     </div>
   );
 }
